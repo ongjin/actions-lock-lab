@@ -6,4 +6,4 @@ runs:
     - shell: bash
       run: echo "act release ${ACT_RELEASE}"
       env:
-        ACT_RELEASE: "1.0.0"
+        ACT_RELEASE: "1.0.1"
