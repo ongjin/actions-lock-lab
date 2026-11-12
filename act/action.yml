@@ -1,0 +1,9 @@
+name: lock-lab act
+description: Prints which release of this action is running.
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "act release ${ACT_RELEASE}"
+      env:
+        ACT_RELEASE: "dev"

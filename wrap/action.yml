@@ -1,0 +1,10 @@
+name: lock-lab wrap
+description: A composite action that calls act by its major tag, like many third-party wrappers do.
+runs:
+  using: composite
+  steps:
+    - uses: ongjin/actions-lock-lab/act@v1
+    - shell: bash
+      run: echo "wrap release ${WRAP_RELEASE}"
+      env:
+        WRAP_RELEASE: "dev"
