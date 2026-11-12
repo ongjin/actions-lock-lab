@@ -10,7 +10,7 @@ workflows:
 dependencies:
     'ongjin/actions-lock-lab@v1':
         ref: 'v1'
-        commit: 'sha1-6be253acfdc601c5c602295a9f25e7ce78d1a7c6'
+        commit: 'sha1-d9a27ae4a9129fe2dbde36d59ecda4bc3418dc9b'
         owner_id: 86001644
         repo_id: 1454982381
     'ongjin/actions-lock-lab@v1.0.0':
