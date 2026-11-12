@@ -1,0 +1,8 @@
+name: transitive
+on: workflow_dispatch
+permissions: {}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ongjin/actions-lock-lab/wrap@v1
