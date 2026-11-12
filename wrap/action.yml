@@ -7,4 +7,4 @@ runs:
     - shell: bash
       run: echo "wrap release ${WRAP_RELEASE}"
       env:
-        WRAP_RELEASE: "dev"
+        WRAP_RELEASE: "1.0.0"
