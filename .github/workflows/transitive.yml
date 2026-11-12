@@ -5,4 +5,4 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: ongjin/actions-lock-lab/wrap@v1
+      - uses: ongjin/actions-lock-lab/wrap@wrap-v1.0.0
