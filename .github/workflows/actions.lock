@@ -5,9 +5,16 @@ version: 'v0.0.3'
 workflows:
     '.github/workflows/direct.yml':
         - 'ongjin/actions-lock-lab@v1.0.0'
+    '.github/workflows/thirdparty.yml':
+        - 'svrooij/azure-static-web-app-deploy-action@v1.3.1'
     '.github/workflows/transitive.yml':
         - 'ongjin/actions-lock-lab@wrap-v1.0.0'
 dependencies:
+    'azure/login@v3':
+        ref: 'v3'
+        commit: 'sha1-a641126d1b8aa4d1fa005f4f92df94a3a4c4c906'
+        owner_id: 6844498
+        repo_id: 210798615
     'ongjin/actions-lock-lab@v1':
         ref: 'v1'
         commit: 'sha1-d9a27ae4a9129fe2dbde36d59ecda4bc3418dc9b'
@@ -25,3 +32,10 @@ dependencies:
         repo_id: 1454982381
         uses:
             - 'ongjin/actions-lock-lab@v1'
+    'svrooij/azure-static-web-app-deploy-action@v1.3.1':
+        ref: 'v1.3.1'
+        commit: 'sha1-a2ab6596502e7026802b7661b317d105d80ee9c1'
+        owner_id: 1292510
+        repo_id: 995978450
+        uses:
+            - 'azure/login@v3'

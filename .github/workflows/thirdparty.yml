@@ -1,0 +1,10 @@
+name: thirdparty
+on: workflow_dispatch
+permissions: {}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      # 실제 서드파티 composite 액션. 안에서 azure/login@v3 을 부른다. 실행은 하지 않고 준비 단계의 잠금 검사만 본다.
+      - if: ${{ false }}
+        uses: svrooij/azure-static-web-app-deploy-action@v1.3.1
