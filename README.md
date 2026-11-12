@@ -8,3 +8,5 @@ GitHub Actions 워크플로 잠금 파일(`.github/workflows/actions.lock`)이 �
 - `.github/workflows/transitive.yml`: `wrap`을 통해 `act`를 간접으로 쓴다.
 
 Reproduction lab for how GitHub Actions workflow lockfiles handle upstream tag moves.
+
+main 에 들어간 개발 커밋 예시 (v1.1.0 릴리스 전).
